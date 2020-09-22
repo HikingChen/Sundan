@@ -2279,16 +2279,17 @@
             },
             async: false,
             success: function (result) {
-                return 155484;
+                goodsId = 155484;
                 // if (result.success == 1) {
                 //     goodsId = result.data[0].goods_id;
                 //     return goodsId;
                 // }
             },
             error: function (result) {
-                return 0;
+                goodsId = 404;
             }
         })
+        return goodsId;
     }
 
     alert(getGoodsIdByBn(30705))
