@@ -2267,7 +2267,7 @@
     })
 
     function getGoodsIdByBn(id) {
-        var goodsId = '000000';
+        var goodsId='';
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -2278,20 +2278,20 @@
                 token: 'G5kz5WBTSm'
             },
             async: false,
-            success: function (result) {
-                goodsId = 155484;
-                // goodsId = result.data[0].goods_id;
-
-                // if (result.success == 1) {
-                //     goodsId = result.data[0].goods_id;
-                //     return goodsId;
-                // }
+            success: function(result) {
+                if (result.success == 1) {
+                    goodsId = result.data[0].goods_id;
+                    window.AndroidJavascriptInterface.onGoodsIdCallback(goodsId);
+                    return goodsId;
+                    // window.webkit.messageHandlers.goodsIDCallBack.postMessage(goodsId);
+                }
             },
-            error: function (result) {
-                goodsId = 404;
-            },
+            error: function(result){
+                return 0;
+            }
         })
-        return goodsId;
+
+
     }
 
     alert(9999999)
