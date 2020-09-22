@@ -2267,7 +2267,7 @@
     })
 
     function getGoodsIdByBn(id) {
-        var goodsId = '';
+        var goodsId = '初始化';
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -2287,6 +2287,9 @@
             },
             error: function (result) {
                 goodsId = 404;
+            },
+            complete: function() {
+                goodsId = 111;
             }
         })
         return goodsId;
