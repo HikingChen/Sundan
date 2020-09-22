@@ -1649,50 +1649,50 @@
             offset: 0,
             throttle: 0
         });
-        $(".apple").click(function() {
-            $("body,html").scrollTop($("#apple").offset().top - 70);
-
-        });
-        $(".5g").click(function() {
-            $("body,html").scrollTop($("#5g").offset().top);
-
-        });
-        $(".dn").click(function() {
-            $("body,html").scrollTop($("#dn").offset().top);
-
-        });
-        $(".zn").click(function() {
-            $("body,html").scrollTop($("#zn").offset().top);
-
-        });
-        $(".wr").click(function() {
-            $("body,html").scrollTop($("#wr").offset().top);
-
-        });
-        $(".sd").click(function() {
-            $("body,html").scrollTop($("#sd").offset().top);
-
-        });
-        $(".xj").click(function() {
-            $("body,html").scrollTop($("#xj").offset().top);
-
-        });
-        $(".cw").click(function() {
-            $("body,html").scrollTop($("#cw").offset().top);
-
-        });
-        $(".kt").click(function() {
-            $("body,html").scrollTop($("#kt").offset().top);
-
-        });
-        $(".bx").click(function() {
-            $("body,html").scrollTop($("#bx").offset().top);
-
-        });
-        $(".ds").click(function() {
-            $("body,html").scrollTop($("#ds").offset().top);
-
-        });
+        // $(".apple").click(function() {
+        //     $("body,html").scrollTop($("#apple").offset().top - 70);
+        //
+        // });
+        // $(".5g").click(function() {
+        //     $("body,html").scrollTop($("#5g").offset().top);
+        //
+        // });
+        // $(".dn").click(function() {
+        //     $("body,html").scrollTop($("#dn").offset().top);
+        //
+        // });
+        // $(".zn").click(function() {
+        //     $("body,html").scrollTop($("#zn").offset().top);
+        //
+        // });
+        // $(".wr").click(function() {
+        //     $("body,html").scrollTop($("#wr").offset().top);
+        //
+        // });
+        // $(".sd").click(function() {
+        //     $("body,html").scrollTop($("#sd").offset().top);
+        //
+        // });
+        // $(".xj").click(function() {
+        //     $("body,html").scrollTop($("#xj").offset().top);
+        //
+        // });
+        // $(".cw").click(function() {
+        //     $("body,html").scrollTop($("#cw").offset().top);
+        //
+        // });
+        // $(".kt").click(function() {
+        //     $("body,html").scrollTop($("#kt").offset().top);
+        //
+        // });
+        // $(".bx").click(function() {
+        //     $("body,html").scrollTop($("#bx").offset().top);
+        //
+        // });
+        // $(".ds").click(function() {
+        //     $("body,html").scrollTop($("#ds").offset().top);
+        //
+        // });
 
 
 
@@ -1757,35 +1757,30 @@
         }
     })
 
-    function getGoodsIdByBnk(bn) {
+    function getGoodsIdByBn(id) {
+        var goodsId='';
         $.ajax({
             type: "POST",
             dataType: "json",
-            url: "https://www.sundan.com/prefecture/wx/bntoGoodsid.php",
+            url: "https://www.sundan.com/prefecture/wx/idtoGoodsid.php",
             cache: false,
             data: {
-                bn: bn,
+                id: id,
                 token: 'G5kz5WBTSm'
             },
-            async: true,
+            async: false,
             success: function(result) {
-                alert("请求成功 - " + result);
                 if (result.success == 1) {
-                    // alert("请求成功");
+                    goodsId = result.data[0].goods_id;
+                    return goodsId;
                 }
             },
-            error: function(res) {
-                alert("请求失败 - " + res);
-            },
-            complete: function(XMLHttpRequest, textStatus) {
-                alert("请求完成 - " + textStatus);
+            error: function(result){
+                return 0;
             }
         })
-
-
     }
 
-    alert(getGoodsIdByBnk(155484))
 </script>
 
 
