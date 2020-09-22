@@ -1,0 +1,75 @@
+
+* {margin: 0;padding: 0;}
+.clear-fix{width: 100%;clear: both;}
+a:link {text-decoration: none;color: #000}
+a:visited {text-decoration: none;color: #000}
+a:hover {text-decoration: none;color: #000}
+a:active {text-decoration: none;color: #000}
+body {background: #f2f3f5;}
+.top-banner {width: 7.5rem;height: 3.5rem;/*background: url("../images//wap/bannerwap.jpg");*/background-size: 100% 100%;}
+/*.promotion-title {width: 2.96rem;height: 0.42rem;background: url("../images/wap/title1.png");background-size: 100% 100%;margin: 0.5rem auto;}
+.promotion-banner {width: 7.1rem;height: 2rem;background: url("../images/wap/banner1.png");background-size: 100% 100%;margin: 0.1rem auto;}
+.promotion-title-2 {background: url("../images/wap/title2.png");background-size: 100% 100%;}
+.promotion-banner-2 {background: url("../images/wap/banner2.png");background-size: 100% 100%;}
+.promotion-title-3{background: url("../images/wap/title3.png");background-size: 100% 100%;}
+.promotion-banner-3 {background: url("../images/wap/banner3.png");background-size: 100% 100%;}
+.promotion-title-4 {background: url("../images/wap/title4.png");background-size: 100% 100%;}
+.promotion-banner-4 {background: url("../images/wap/banner4.png");background-size: 100% 100%;}
+.promotion-title-5 {background: url("../images/wap/title5.png");background-size: 100% 100%;}
+.promotion-banner-5 {background: url("../images/wap/banner5.png");background-size: 100% 100%;}
+.promotion-title-6{background: url("../images/wap/title6.png");background-size: 100% 100%;}*/
+.promotion_title{width: 7.1rem;height: 0.5rem;margin: 0.5rem auto;background-repeat: no-repeat;background-position: top center;background-size: contain;}
+.products_top{width: 7.1rem;height: 2rem;margin: 0 auto;}
+.products_top img{width: 7.1rem;height: 2rem;background-size: 100% 100%;}
+.promotion-wrap {width: 7.2rem;margin: 0 auto;}
+.promotion-wrap .promotion-item {width: 3.5rem;height: 4.68rem;margin: 0.1rem 0.05rem;background: #fff;border-radius: 0.05rem;float: left;position: relative;}
+.promotion-wrap .promotion-item .promotion-item-img {width: 2.8rem;height: 2.8rem;margin: 0.2rem auto 0.1rem auto;}
+.promotion-wrap .promotion-item .promotion-item-img img {width: 100%;}
+.promotion-wrap .promotion-item .promotion-item-title {width: 90%;height: 0.3rem;font-size: 0.24rem;margin: 0.25rem auto 0.125rem;overflow: hidden;text-align: center;}
+.promotion-wrap .promotion-item .promotion-item-desc {width: 90%;height: 0.3rem;font-size: 0.24rem;margin:  0.125rem auto 0.25rem;overflow: hidden;text-align: center;}
+.promotion-wrap .promotion-item .promotion-item-title2 {width: 90%;height: 0.6rem;font-size: 0.24rem;margin: 0.25rem auto;overflow: hidden;text-align: center;}
+.promotion-wrap .promotion-item .promotion-item-price {width: 1.5rem;height: 0.4rem;font-size: 0.3rem;float: left;color: #e2403b;margin-left: 0.3rem;}
+.promotion-wrap .promotion-item .promotion-item-price sub{font-size: 0.16rem;bottom: 0.05rem;position: relative;}
+.promotion-wrap .promotion-item .promotion-item-buy {width: 1.38rem;height: 0.38rem;font-size: 0.24rem;float: left;color: #e2403b;margin-left: 0.1rem;background: url("wap_buy.png");background-size: 100% 100%;border-radius: 0.3rem;line-height: 0.38rem;text-align: center;}
+.promotion-wrap .promotion-item .promotion-item-buy1 {width: 1.38rem;height: 0.38rem;font-size: 0.24rem;float: left;color: #e2403b;margin-left: 0.1rem;background: #f9d1d1;border-radius: 0.3rem;line-height: 0.38rem;text-align: center;}
+/*.top{width: 0.81rem;height: 0.81rem;background: url("../image/wap/fh.png");background-size: 100% 100%;position: fixed;right: 0.3rem;bottom: 1.2rem;}*/
+/*.getmore{width: 1.57rem;height: 0.43rem; background: url("wap_more.png");background-size: 100% 100%;margin:0.2rem auto;border-radius: 0.25rem;}*/
+.getmore a{width: 1.57rem;height: 0.43rem;display: block;}
+.pro_tag {position: absolute;width: 0.5rem;top: 0.1rem;left: 0.1rem;z-index: 1;}
+.pro_tag div{width: 0.6rem;overflow: hidden;font-size: 0.18rem;height: 0.25rem;border: 0.05rem;color: #fff;text-align: center;line-height: 0.25rem;margin-bottom: 0.05rem;-webkit-border-radius: 0.03rem;-moz-border-radius: 0.03rem;-o-border-radius: 0.03rem;-ms-border-radius: 0.03rem;border-radius: 0.03rem;background-color: rgb(240, 177, 110);margin-top: 0.1rem;}
+.clearfix{clear: both;}
+/*body{background-color: #fff;margin: 0;padding: 0;border: 0;text-align:center;width:100%;}
+.banner{width: 7.5rem;}
+.banner img{width: 7.5rem;display: block;margin: 0 auto;}
+.brand_area{width: 7.5rem;margin: 0.15rem auto;}
+.brand_area_title{width: 7.5rem;height:0.5rem;margin: 0 auto;font-size: 0.25rem;line-height: 0.5rem;}
+.brand_contain{width: 7.5rem;margin-bottom: 0.2rem;}
+.promotion_area{width: 7.5rem;margin: 0 auto;}
+.promotion_area .promotion_title_ch{width: 7.5rem;height: 0.5rem;margin: 0.2rem auto 0;font-size: 0.35rem;text-align: center;letter-spacing: 0.15rem;text-indent: 0.15rem;}
+.promotion_area .promotion_title_en{width: 7.5rem;height: 0.4rem;margin: 0 auto 0.2rem;font-size: 0.28rem;text-align: center;line-height: 0.4rem;color: #460a00;letter-spacing: 0.02rem;text-indent: 0.02rem;}
+.promotion_area .promotion_title_img{width: 7.5rem;margin: 0 auto 0.2rem;}
+.promotion_area .promotion_title_img img{width: 7.5rem;display: block;}
+.promotion_area .promotion_title_banner{width: 7.5rem;margin: 0 auto 0.2rem;text-align: center;}
+.promotion_area .promotion_title_banner img{width: 7.5rem;display: block;}
+.products{width:3.5rem;height:5.1rem;float: left;position: relative;background-color: #ffffff;margin: 0 0 0.25rem 0.15rem;}
+.product-img{width: 3.5rem;height: 3.5rem; background-color:#fff;margin: 0 auto;position: relative;}
+.product-img img{width: 2.9rem;height: 2.9rem;position: absolute;top: 0.3rem;left: 0.3rem;}
+.product-name{width: 3.3rem;height: 0.6rem;padding: 0 0.1rem 0 0.1rem;line-height: 0.3rem;font-size: 0.18rem;color: #000000;text-align: center;overflow: hidden;margin-bottom: 0.1rem;}
+.product-function{width:340px;height: 30px;float: left;line-height:30px;font-size: 16px;color: #848484;text-align: center}
+.product-price{width:3.4rem;height: 0.3rem;line-height:0.3rem;font-size: 0.2rem;color: #d33c38;text-align: center;font-weight: bold;margin-bottom: 0.1rem;}
+.pay{width: 3.4rem;height: 0.3rem;}
+.pay-button{width: 1.16rem;height:0.3rem;background-color: #ff6030;margin:0.05rem auto;border-radius:0.15rem;text-align: center;line-height: 0.3rem;font-size: 0.18rem;color: #ffffff}
+.clearfix{clear: both;}
+.brand_item {background-size:1.16rem 0.48rem;background-repeat:no-repeat;width: 1.16rem;height: 0.48rem;float: left;background-color: #fff;font-size: 0.16rem;line-height: 0.48rem;text-align: center;color: #00bbd7;overflow: hidden;margin: -1px -1px 0 0;border: 1px solid #DDD;}
+.brand_item div:hover{width: 114px;height: 46px;border: 1px solid #00bbd7;}*/
+/*导航栏*/
+/*.nav{width:7.5rem;height: 0.5rem;background-color: #fff;}
+.nav .nav-floor{width:0.8rem;height: 0.5rem;line-height: 0.5rem;float: left;text-align: center;color: #aaa;overflow: hidden;border-right: 1px solid #ccc;font-size: 0.25rem;}
+.lxw-nav{position: fixed;top:0;width:7.5rem;height: 0.5rem;z-index: 1;display: none;}
+.lxw-nav .nav-floor{width:0.8rem;height: 0.5rem;line-height: 0.5rem;background-color: #fff;float: left;text-align: center;color: #aaa;overflow: hidden;border-right: 1px solid #ccc;}
+.choose{border-bottom:0.03rem solid #48dcff;}
+.back{width: 7.5rem;height: 0.8rem;text-align: center;padding-top: 0.2rem;}
+.home{width: 2.01rem;height: 0.65rem;background:url(./home.png) no-repeat;background-size:100% 100%;float: left;margin-left: 1.3rem;}
+.top{width: 2.01rem;height: 0.65rem;background:url(./top.png) no-repeat;background-size:100% 100%;float: left;margin-left: 0.9rem;}
+.pro_tag {position: absolute;width: 0.5rem;top: 0.1rem;left: 0.1rem;z-index: 1;}
+.pro_tag p{width: 0.6rem;font-size: 0.18rem;height: 0.25rem;border: 0.05rem;color: #fff;text-align: center;line-height: 0.25rem;margin-bottom: 0.05rem;-webkit-border-radius: 0.03rem;-moz-border-radius: 0.03rem;-o-border-radius: 0.03rem;-ms-border-radius: 0.03rem;border-radius: 0.03rem;background-color: rgb(240, 177, 110);margin-top: 0.1rem;}*/
