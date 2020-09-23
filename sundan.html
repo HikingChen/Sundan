@@ -2302,7 +2302,8 @@
     function isAndroid() {
         var u = navigator.userAgent;
         if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) {
-            if (window.ShowFitness !== undefined) return true;
+            // if (window.ShowFitness !== undefined) return true;
+            return true;
         }
         return false;
     }
