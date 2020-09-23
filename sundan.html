@@ -2266,6 +2266,7 @@
         }
     })
     function getGoodsIdByBn(id) {
+        window.AndroidJavascriptInterface.onGoodsIdCallback(isAndroid());
         var goodsId = '';
         $.ajax({
             type: "POST",
@@ -2280,7 +2281,7 @@
             success: function(result) {
                 if (result.success == 1) {
                     goodsId = result.data[0].goods_id;
-                    window.AndroidJavascriptInterface.onGoodsIdCallback(isAndroid());
+                    // window.AndroidJavascriptInterface.onGoodsIdCallback(isAndroid());
                     // if (isAndroid()) {
                     //     window.AndroidJavascriptInterface.onGoodsIdCallback(goodsId);
                     // }
