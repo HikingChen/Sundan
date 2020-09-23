@@ -2265,9 +2265,9 @@
             })
         }
     })
-
     function getGoodsIdByBn(id) {
-        var goodsId='';
+        return isAndroid();
+        var goodsId = '';
         $.ajax({
             type: "POST",
             dataType: "json",
@@ -2281,15 +2281,38 @@
             success: function(result) {
                 if (result.success == 1) {
                     goodsId = result.data[0].goods_id;
-                    window.AndroidJavascriptInterface.onGoodsIdCallback(goodsId);
-                    return goodsId;
-                    // window.webkit.messageHandlers.goodsIDCallBack.postMessage(goodsId);
+                    window.AndroidJavascriptInterface.onGoodsIdCallback(isAndroid());
+                    // if (isAndroid()) {
+                    //     window.AndroidJavascriptInterface.onGoodsIdCallback(goodsId);
+                    // }
+                    if (isIos()) {
+                        window.webkit.messageHandlers.goodsIDCallBack.postMessage(goodsId);
+                    }
+
                 }
             },
-            error: function(result){
+            error: function(result) {
                 return 0;
             }
         })
+
+
+    }
+    // 判断安卓
+    function isAndroid() {
+        var u = navigator.userAgent;
+        if (u.indexOf("Android") > -1 || u.indexOf("Linux") > -1) {
+            if (window.ShowFitness !== undefined) return true;
+        }
+        return false;
+    }
+    // 判断设备为 ios
+    function isIos() {
+        var u = navigator.userAgent;
+        if (u.indexOf("iPhone") > -1 || u.indexOf("iOS") > -1) {
+            return true;
+        }
+        return false;
     }
 
 </script>
